@@ -1,0 +1,416 @@
+@import './../../../variables.scss';
+
+.home-page-container {
+    height: 100vh;
+    background: linear-gradient(179.68deg, #ECF9F0 0.28%, #FFFFFF 99.77%);
+
+    .home-page-content {
+        padding: 25vh 9.375vw 0 9.375vw;
+        .headername-homepage {
+            display: flex;
+            align-items: center;
+            margin: 11vh 0 2vh 0vh;
+            .title-line {
+                border-top: 3px solid $noukha_green4;
+                width: 4.11vw;
+            }
+            .sm-title-homepage {
+                color: $noukha_green4;
+                font-size: 20px;
+                font-family: $open_sans_regular;
+                margin-left: 0.8vw;
+            }
+            
+        }
+        .homepage-content-body {
+            font-size: 56px;
+            color: #000;
+            line-height: 76px;
+            margin-bottom: 2vh;
+            .homepage-content-body-light {
+                font-family: $open_sans_regular;
+            }
+            .homepage-content-body-bold {
+                font-family: $open_sans_bold;
+            }
+        }
+        .homepage-tagline-text {
+            font-family: $poppins_regular;
+            font-size: 16px;
+            color: #4B4B4B;
+            margin-bottom: 4vh;
+        }
+
+        .homepage-image-con {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.clients-info-con {
+    .client-info-area {
+        background-color: $noukha_green3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 49px 0px;
+        background-image: url('./../../../assets/images/client-info-bgimg.svg');
+        background-size: cover;
+        width: 100%;
+        .client-info-headerTxt {
+            font-family: $open_sans_semibold;
+            font-size: 22px;
+            color: $noukha_yellow;
+            margin-bottom: 10px;
+        }
+        .client-info-bodyTxt {
+            font-family: $open_sans_semibold;
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+        .client-details-info {
+            display: flex;
+            justify-content: space-between;
+            .client-tile {
+                width: 210px;
+                height: 65px;
+                background-color: $noukha_green2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 6px;
+                margin: 0 15px;
+            }
+        }
+    }
+}
+
+.what-we-do-con {
+    .what-we-do-area {
+        padding: 0 9.375vw 0 9.375vw;
+        .what-wedo-btn-con {
+            margin: 75px 0 48px 0; 
+            text-align: center;
+            #what_we_do_btn {
+                padding: 6px 23px;
+                background: #ECF9F0;
+                border-radius: 10px;
+                text-align: center;
+                border: none;
+                outline: none;
+                font-size: 20px;
+                font-family: $open_sans_semibold;
+                color: $noukha_green3;
+            }
+        }
+        .what-wedo-body-txt-left {
+            font-size: 42px;
+            color: $noukha_text_dark;
+            font-family: $open_sans_bold;
+        }
+        .what-wedo-body-txt-right {
+            font-size: 18px;
+            color: #4B4B4B;
+            font-family: $open_sans_regular;
+        }
+
+        .what-wedo-tile-con {
+            margin-bottom: 105px;
+            .what-wedo-tile-col {
+                &:nth-child(2) {
+                    margin-top: 7vh;
+                }
+                &:nth-child(3) {
+                    margin-top: 14vh;
+                }
+                .what-wedo-tile {
+                    padding: 26px;
+                    width: 350px;
+                    border-radius: 6px;
+                    background-color: #EFF8F2;
+                    border-radius: 6px;
+                    &:hover {
+                        border: 1px solid $noukha_green4;
+                    }
+    
+                    .img-tile-con {
+                        width: 70px;
+                        height: 70px;
+                        background: #13A842;
+                        border-radius: 6px;
+                    }
+                    .tile-header {
+                        font-size: 20px;
+                        font-family: $open_sans_semibold;
+                        color: #000000;
+                        margin: 15px 0 15px 0;
+                    }
+    
+                    .tile-body-txt {
+                        color: #4B4B4B;
+                        font-size: 18px;
+                        font-family: $open_sans_regular;
+                        margin: 0 0 28px 0;
+                    }
+                }
+                .tile-contactus {
+                    display: flex;
+                    align-items: center;
+                    .title-line {
+                        border-top: 3px solid $noukha_green4;
+                        width: 4.11vw;
+                    }
+                    .sm-title-homepage {
+                        color: $noukha_green4;
+                        font-size: 20px;
+                        font-family: $open_sans_regular;
+                        margin-left: 0.8vw;
+                    }
+                    
+                }
+            }   
+        }
+        .solutions-con {
+            .solutions-header-txt {
+                color: $noukha_text_dark;
+                font-family: $open_sans_semibold;
+                font-size: 42px;
+                margin-bottom: 30px;
+            }
+            ul.solutions-body-txt {
+                list-style-type: none;
+                padding-left: 15px;
+                li {
+                    margin: 0;
+                    padding-left: 15px;
+                    font-size: 18px;
+                    font-family: $open_sans_regular;
+                    color: #4B4B4B;
+                    margin-bottom: 30px;
+                    &::before {
+                        content: "•";
+                        color: #4B4B4B;
+                        display: inline-block;
+                        width: 1em;
+                        margin-left: -1em;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+.success-stories-con {
+    position: relative;
+    margin-top: 125px;
+    height: 65vh;
+    .success-stories-header {
+        color: $noukha_green4;
+        font-size: 42px;
+        font-family: $open_sans_bold;
+    }          
+    .client-stat-con {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 45px;
+        .client-stat-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .stat-num {
+                font-size: 64px;
+                font-family: $open_sans_bold;
+                color: $noukha_green4;
+            }
+            .stat-name {
+                font-size: 24px;
+                font-family: $open_sans_regular;
+                color: #1E1E1E;
+            }
+        }
+    }
+    .line-img-con {
+        position: absolute;
+        top: -33vh;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+} 
+
+.our-services-area {
+    padding: 90px 0 65px 0;
+    background-image: url('./../../../assets/images/services-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .our-services-btn-con {
+        margin: 0px 0 23px 0;
+        text-align: center;
+        #our-services-btn {
+            padding: 8px 22px;
+            background: $noukha_yellow;
+            border-radius: 10px;
+            color: $noukha_green3;
+            font-size: 20px;
+            font-family: $open_sans_semibold;
+        }
+    }
+    .services-header-txt {
+        font-size: 42px;
+        color: $noukha_text_dark;
+        text-align: center;
+        margin-bottom: 50px;
+        line-height: 50px;
+        .services-header-txt-light {
+            font-family: $open_sans_regular;
+        }
+        .services-header-txt-bold {
+            font-family: $open_sans_bold;
+        }
+    }
+
+    .services-tiles-con {
+        padding: 0 9.375vw 78px 9.375vw;
+        .service-tile {
+            background: #fff;
+            border: 1px solid $noukha_yellow;
+            border-radius: 26px;
+            padding: 30px 25px 30px 30px;
+            width: 19.3vw;
+            margin-top: 23px;
+            cursor: pointer;
+            &:hover {
+                box-shadow: 0px 0px 15px rgba(207, 168, 20, 0.5);
+            }
+            .service-logo-con {
+                margin-bottom: 33px;
+                .service-logo-img-con {
+                    width: 70px;
+                    height: 70px;
+                    background: $noukha_yellow;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .service-name {
+                font-size: 24px;
+                font-family: $open_sans_bold;
+                color: $noukha_text_dark;
+                margin-bottom: 55px;
+            }
+            .get-quoate-btn-con {
+                text-align: right;
+                .get-quote-btn {
+                    background-color: transparent;
+                    font-size: 15px;
+                    font-family: $open_sans_semibold;
+                    color: #AFAFAF;
+                    border-radius: 10px;
+                    padding: 10px 30px;
+                    &:hover {
+                        background-color: $noukha_green2;
+                        color: #fff;
+                        font-family: $open_sans_bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .view-more-btn-con {
+        text-align: center;
+        #view_more_services_btn {
+            font-family: $open_sans_regular;
+            font-size: 16px;
+            color: #000;
+            padding: 10px 30px;
+            border: 1px solid #CFA814;
+            border-radius: 8px;
+            background-color: $noukha_yellow;
+        }
+    }
+}
+
+.portfolio-content-area {
+    padding: 0 9.375vw 0 9.375vw;
+    .what-wedid-btn-con {
+        margin: 75px 0 48px 0; 
+        text-align: center;
+        #what_we_did_btn {
+            padding: 6px 23px;
+            background: #ECF9F0;
+            border-radius: 10px;
+            text-align: center;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            font-family: $open_sans_semibold;
+            color: $noukha_green3;
+        }
+    }
+    .what-wedid-header-txt {
+        font-family: $open_sans_bold;
+        font-size: 42px;
+        color: $noukha_text_dark;
+        text-align: center;
+        line-height: 60px;
+        margin-bottom: 90px;
+    }
+
+    .portfolio-info-con {
+        margin-bottom: 45px;
+        .portfolio-info-img-con {
+            margin-bottom: 33px;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        .portfolio-details-txt-con {
+            .portfolio-details-txt-header {
+                font-family: open_sans_bold;
+                color: $noukha_text_dark;
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+            .portfolio-details-txt-body {
+                color: #686868;
+                font-size: 18px;
+                font-family: $open_sans_regular;
+            }
+        }
+    }
+
+    .client-feedback-con {
+        margin-top: 12vh;
+        .our-testimonals-btn-con {
+            #our_testimonals_btn {
+                padding: 8px 17px;
+                background: #ECF9F0;
+                border-radius: 10px;
+                text-align: center;
+                border: none;
+                outline: none;
+                font-size: 20px;
+                font-family: $open_sans_semibold;
+                color: $noukha_green3;
+            }
+        }
+        .our-testimonals-header-txt {
+            font-family: $open_sans_semibold;
+            font-size: 42px;
+            color: $noukha_text_dark;
+            line-height: 50px;
+            margin-top: 28px;
+        }
+    }
+}

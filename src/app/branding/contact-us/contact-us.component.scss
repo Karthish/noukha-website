@@ -1,0 +1,109 @@
+@import './../../../variables.scss';
+
+.contact-us-area {
+    padding: 33vh 9.375vw 0 9.375vw;
+    .getin-touch-btn-con {
+        #getin_touch_btn {
+            padding: 6px 23px;
+            background: #ECF9F0;
+            border-radius: 10px;
+            text-align: center;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            font-family: $open_sans_semibold;
+            color: $noukha_green3;
+        }
+    }
+    .contact-us-help-headerTxt {
+        font-family: $open_sans_bold;
+        font-size: 42px;
+        color: $noukha_text_dark;   
+        margin: 18px 0 48px 0;
+    }
+
+    .contact-us-tiles-con {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 112px;
+        .contact-us-tile {
+            background-color: #D3E7D9;
+            padding: 28px 30px;
+            border-radius: 6px;
+            width: 290px;
+
+            .tile-header-box {
+                width: 70px;
+                height: 70px;
+                background-color: $noukha_green4;
+                border-radius: 6px;
+            }
+            .tile-title {
+                margin: 26px 0 10px 0;
+                font-family: $open_sans_bold;
+                font-size: 20px;
+            }
+            .tile-info  {
+                font-family: $open_sans_regular;
+                color: $noukha_text_dark;
+                font-size: 18px;
+            }
+        }
+        .contact-us-tile.lined-tile {
+            border: 1px solid #13A842;
+            background-color: transparent;
+        }
+    }
+}
+
+.interested-in-con {
+    margin-bottom: 30px;
+    background-color: rgba(255, 241, 188, 0.2);
+    padding: 10vh 9.375vw 0 9.375vw;
+    .interestedIn-header-txt {
+        color: #000000;
+        font-size: 26px;
+        font-family: $open_sans_bold;
+        margin-bottom: 40px;
+    }
+    .user-service-con {
+        display: flex;
+        margin-bottom: 20px;
+        .user-service-label {
+            color: $noukha_yellow2;
+            font-family: $open_sans_semibold;
+            font-size: 15px;
+            padding: 5px 17px;
+            width: 12.2vw;
+            border: 1px solid $noukha_yellow2;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 13px;
+            text-align: center;
+            height: 57px;
+            float: left;
+        }
+    }
+    .attachment-btn-con {
+        .attachment-btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #000000;
+            font-family: $open_sans_bold;
+            font-size: 16px;
+            background-color: $noukha_yellow2;
+            border-radius: 8px;
+            border: 1px solid $noukha_yellow2;
+            padding: 14px 17px;
+            span:nth-child(1) {
+                margin-right: 10px;
+            }
+        }
+    }
+    .request-quote-btn-con  {
+        margin: 75px 0 60px 0;
+    }
+}
