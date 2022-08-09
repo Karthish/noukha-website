@@ -629,6 +629,17 @@ a {
         }
     }
 
+    .services-con-intro {
+        .our-services-area {
+            padding: 18vh 9.375vw 0 9.375vw!important;
+            .intro-txt-paragraph {
+                font-size: 16px!important;
+                margin-top: 30px!important;
+                text-align: center!important;
+            }
+        }
+    }
+
 }
 
 // Tablets
@@ -982,6 +993,18 @@ a {
         }
         .request-quote-btn-con {
             margin: 40px 0 35px 0!important;
+        }
+    }
+
+
+    .services-con-intro {
+        .our-services-area {
+            padding: 20vh 9.375vw 0 9.375vw !important;
+            .intro-txt-paragraph {
+                font-size: 18px!important;
+                margin-top: 45px!important;
+                text-align: center!important;
+            }
         }
     }
      

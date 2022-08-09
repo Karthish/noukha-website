@@ -1,60 +1,65 @@
 @import './../../../variables.scss';
 
-.contact-us-area {
-    padding: 33vh 9.375vw 0 9.375vw;
-    .getin-touch-btn-con {
-        #getin_touch_btn {
-            padding: 6px 23px;
-            background: #ECF9F0;
-            border-radius: 10px;
-            text-align: center;
-            border: none;
-            outline: none;
-            font-size: 20px;
-            font-family: $open_sans_semibold;
-            color: $noukha_green3;
-        }
-    }
-    .contact-us-help-headerTxt {
-        font-family: $open_sans_bold;
-        font-size: 42px;
-        color: $noukha_text_dark;   
-        margin: 18px 0 48px 0;
-    }
-
-    .contact-us-tiles-con {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 112px;
-        .contact-us-tile {
-            background-color: #D3E7D9;
-            padding: 28px 30px;
-            border-radius: 6px;
-            width: 290px;
-
-            .tile-header-box {
-                width: 70px;
-                height: 70px;
-                background-color: $noukha_green4;
-                border-radius: 6px;
-            }
-            .tile-title {
-                margin: 26px 0 10px 0;
-                font-family: $open_sans_bold;
+.contact-us-con {
+    height: 100vh;
+    background: linear-gradient(179.68deg, #ECF9F0 0.28%, #FFFFFF 99.77%);
+    .contact-us-area {
+        padding: 33vh 9.375vw 0 9.375vw;
+        .getin-touch-btn-con {
+            #getin_touch_btn {
+                padding: 6px 23px;
+                background: #ECF9F0;
+                border-radius: 10px;
+                text-align: center;
+                border: none;
+                outline: none;
                 font-size: 20px;
-            }
-            .tile-info  {
-                font-family: $open_sans_regular;
-                color: $noukha_text_dark;
-                font-size: 18px;
+                font-family: $open_sans_semibold;
+                color: $noukha_green3;
             }
         }
-        .contact-us-tile.lined-tile {
-            border: 1px solid #13A842;
-            background-color: transparent;
+        .contact-us-help-headerTxt {
+            font-family: $open_sans_bold;
+            font-size: 42px;
+            color: $noukha_text_dark;   
+            margin: 18px 0 48px 0;
+        }
+    
+        .contact-us-tiles-con {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 112px;
+            .contact-us-tile {
+                background-color: #D3E7D9;
+                padding: 28px 30px;
+                border-radius: 6px;
+                width: 290px;
+    
+                .tile-header-box {
+                    width: 70px;
+                    height: 70px;
+                    background-color: $noukha_green4;
+                    border-radius: 6px;
+                }
+                .tile-title {
+                    margin: 26px 0 10px 0;
+                    font-family: $open_sans_bold;
+                    font-size: 20px;
+                }
+                .tile-info  {
+                    font-family: $open_sans_regular;
+                    color: $noukha_text_dark;
+                    font-size: 18px;
+                }
+            }
+            .contact-us-tile.lined-tile {
+                border: 1px solid #13A842;
+                background-color: transparent;
+            }
         }
     }
 }
+
 
 .interested-in-con {
     margin-bottom: 30px;
