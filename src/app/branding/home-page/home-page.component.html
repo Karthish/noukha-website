@@ -1,47 +1,5 @@
 <div class="page-container">
-    <section>
-        <div class="noukha-header-component" [ngClass]="{'sticky' : isSticky}">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="noukha-header">
-                <a class="navbar-brand" href="#">
-                    <div>
-                        <img src="./../../../assets/images/noukha_logo.svg" alt="">
-                    </div>
-                </a>    
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          About us
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                      </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">How we work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="contact_us_btn" href="#">Contact Us</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-        </div>
-    </section>
+    <app-header (menuArea)="scroll($event)"></app-header>
     <section class="home-page-container">
         <div class="home-page-content">
             <div class="row">
@@ -221,7 +179,7 @@
         </div>
     </section>
 
-    <section class="services-con">
+    <section class="services-con" id="services_con">
         <div class="our-services-area">
             <div class="our-services-btn-con">
                 <button id="our-services-btn">Our services</button>
@@ -344,7 +302,7 @@
         </div>
     </section>
 
-    <section class="portfolio-con">
+    <section class="portfolio-con" id="portfolio_con">
         <div class="portfolio-content-area">
             <div class="what-wedid-btn-con">
                 <button id="what_we_did_btn">What we do</button>
@@ -534,69 +492,5 @@
             </div>
         </div>
     </section>
-    <section class="footer-con">
-        <div class="footer-area">
-            <div class="row">
-                <div class="col-12 col-lg-6 col-md-6 border-rt"> 
-                    <div class="footer-left">
-                        <div class="noukha-dark-logo-con">
-                            <img src="./../../../assets/images/noukha-dark-logo.svg" alt="">
-                        </div>
-                        <div class="quick-link-menu-con">
-                            <ul>
-                                <li><a href="">Home</a></li>
-                                <li><a href="">About Us</a></li>
-                                <li><a href="">Our Services</a></li>
-                                <li><a href="">Our Portfolio</a></li>
-                            </ul>
-                            <ul class="ms-5">
-                                <li><a href="">How we work</a></li>
-                                <li><a href="">Our Blog</a></li>
-                                <li><a href="">Contact Us</a></li>
-                            </ul>
-                        </div>
-                        <div class="social-media-icons-con">
-                            <div class="social-media-icon-txt">Follow Me</div>
-                            <div class="social-media-icons d-flex">
-                                <a href=""><img src="./../../../assets/images/social-media-icons/fb.svg" alt=""></a>
-                                <a href=""><img src="./../../../assets/images/social-media-icons/instagram.svg" alt=""></a>
-                                <a href=""><img src="./../../../assets/images/social-media-icons/twitter.svg" alt=""></a>
-                                <a href=""><img src="./../../../assets/images/social-media-icons/linkedin.svg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 col-md-6 border-lt">
-                    <div class="footer-right">
-                        <div class="footer-right-header-txt">
-                            <span class="footer-right-header-txt-light">We are Ready to Help You. </span>
-                            <span class="footer-right-header-txt-bold">Feel Free to Contact</span>
-                        </div>
-                        <div class="contact-details-con">
-                            <ul class="contact-details-row">
-                                <li class="contact-detail">
-                                    <div class="contact-detail-icon-con"></div>
-                                    <div class="contact-info"><a href="">support@noukha.in</a></div>
-                                </li>
-                                <li class="contact-detail">
-                                    <div class="contact-detail-icon-con"></div>
-                                    <div class="contact-info"><a href="">Call: +91-9569595966</a></div>
-                                </li>
-                                <li class="contact-detail">
-                                    <div class="contact-detail-icon-con"></div>
-                                    <div class="contact-info"><a href="">contact email address and full 
-                                        address</a></div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="copy-rights-con">
-            All Rights Reserved © 2022  |  Noukha
-        </div>
-    </section>
+    <app-footer></app-footer>
 </div>

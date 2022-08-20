@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit,  HostListener,  Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-contact-us',
@@ -12,6 +12,13 @@ export class ContactUsComponent implements OnInit {
   checkScroll() {
     this.isSticky = window.pageYOffset >= 85;
   }
+
+  @Output() menuArea = new EventEmitter<string>();
+
+  goTo(value: any) {
+    this.menuArea.emit(value);
+  }
+  
   constructor() { }
 
   ngOnInit(): void {

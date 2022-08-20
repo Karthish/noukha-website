@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home-page',
@@ -6,12 +6,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-  isSticky: boolean = false;
 
-  @HostListener('window:scroll', ['$event'])
-  checkScroll() {
-    this.isSticky = window.pageYOffset >= 85;
-  }
   constructor() { }
 
   ngOnInit(): void {
@@ -30,6 +25,12 @@ export class HomePageComponent implements OnInit {
             next = next.nextElementSibling
         }
       })
+  }
+
+  scroll(el: any) {
+   let target =  document.getElementById(el);
+    console.log('target',target);
+    target!.scrollIntoView({behavior: 'smooth'});
   }
 
 

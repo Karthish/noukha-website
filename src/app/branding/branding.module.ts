@@ -4,6 +4,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { BrandingRoutingModule } from './branding-routing.module';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ServicesComponent } from './services/services.component';
+import { HeaderComponent } from './../shared/components/header/header.component';
+import { FooterComponent } from './../shared/components/footer/footer.component';
 
 
 
@@ -11,7 +13,9 @@ import { ServicesComponent } from './services/services.component';
   declarations: [
     HomePageComponent,
     ContactUsComponent,
-    ServicesComponent
+    ServicesComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,

@@ -26,7 +26,7 @@
                         </div>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" (click)="goTo('services_con')">Services</a>
                       </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Portfolio</a>
@@ -35,7 +35,7 @@
                       <a class="nav-link" href="#">How we work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="contact_us_btn" href="#">Contact Us</a>
+                        <a class="nav-link" id="contact_us_btn" href="#" [routerLink]="['/contact-us']">Contact Us</a>
                     </li>
                   </ul>
                 </div>
