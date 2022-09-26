@@ -54,6 +54,11 @@ a {
     color: #fff;
 }
 
+.noukha-black-btn {
+    background-color: #000;
+    color: #fff;
+}
+
 .noukha-form-group {
     display: flex;
     flex-direction: column;
@@ -126,8 +131,9 @@ a {
             #contact_us_btn {
                 border-radius: 8px;
                 padding: 10px 30px;
-                border: 1px solid $noukha_green4;
-                color: $noukha_green4;
+                border: 1px solid $noukha_green3;
+                background-color: $noukha_green3;
+                color: #fff;
                 font-family: $open_sans_semibold;
             }
         }
@@ -212,6 +218,9 @@ a {
                         height: 47px;
                         border-radius: 50%;
                         margin-right: 1.5vw;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                     }
                     .contact-info {
                         a {

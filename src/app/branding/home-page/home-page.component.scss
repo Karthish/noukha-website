@@ -2,7 +2,6 @@
 
 .home-page-container {
     height: 100vh;
-    background: linear-gradient(179.68deg, #ECF9F0 0.28%, #FFFFFF 99.77%);
 
     .home-page-content {
         padding: 25vh 9.375vw 0 9.375vw;
@@ -52,25 +51,24 @@
 
 .clients-info-con {
     .client-info-area {
-        background-color: $noukha_green3;
+        background-color: #EFF8F2;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 49px 0px;
-        background-image: url('./../../../assets/images/client-info-bgimg.svg');
         background-size: cover;
         width: 100%;
         .client-info-headerTxt {
             font-family: $open_sans_semibold;
             font-size: 22px;
-            color: $noukha_yellow;
+            color: #2D2D2D;
             margin-bottom: 10px;
         }
         .client-info-bodyTxt {
             font-family: $open_sans_semibold;
             font-size: 36px;
-            color: #fff;
+            color: #2D2D2D;
             margin-bottom: 40px;
         }
         .client-details-info {
@@ -79,14 +77,17 @@
             .client-tile {
                 width: 210px;
                 height: 65px;
-                background-color: $noukha_green2;
+                background-color: #fff;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 border-radius: 6px;
                 margin: 0 15px;
+                &.client-tile-aryaa {
+                    background-color: #F4EEE2;
+                }
             }
-        }
+        }   
     }
 }
 
@@ -209,7 +210,7 @@
 .success-stories-con {
     position: relative;
     margin-top: 125px;
-    height: 65vh;
+    // height: 65vh;
     .success-stories-header {
         color: $noukha_green4;
         font-size: 42px;
@@ -235,31 +236,33 @@
             }
         }
     }
-    .line-img-con {
-        position: absolute;
-        top: -33vh;
-        width: 100%;
-        img {
-            width: 100%;
-        }
-    }
+    // .line-img-con {
+    //     position: absolute;
+    //     top: -33vh;
+    //     width: 100%;
+    //     img {
+    //         width: 100%;
+    //     }
+    // }
 } 
 
 .our-services-area {
     padding: 90px 0 65px 0;
-    background-image: url('./../../../assets/images/services-bg.svg');
     background-repeat: no-repeat;
     background-size: cover;
     .our-services-btn-con {
         margin: 0px 0 23px 0;
         text-align: center;
         #our-services-btn {
-            padding: 8px 22px;
-            background: $noukha_yellow;
+            padding: 6px 23px;
+            background: #ECF9F0;
             border-radius: 10px;
-            color: $noukha_green3;
+            text-align: center;
+            border: none;
+            outline: none;
             font-size: 20px;
             font-family: $open_sans_semibold;
+            color: $noukha_green3;
         }
     }
     .services-header-txt {
@@ -280,21 +283,21 @@
         padding: 0 9.375vw 78px 9.375vw;
         .service-tile {
             background: #fff;
-            border: 1px solid $noukha_yellow;
+            border: 1px solid $noukha_green4;
             border-radius: 26px;
             padding: 30px 25px 30px 30px;
             width: 19.3vw;
             margin-top: 23px;
             cursor: pointer;
             &:hover {
-                box-shadow: 0px 0px 15px rgba(207, 168, 20, 0.5);
+                box-shadow: 0px 0px 15px #8FDA96;
             }
             .service-logo-con {
                 margin-bottom: 33px;
                 .service-logo-img-con {
                     width: 70px;
                     height: 70px;
-                    background: $noukha_yellow;
+                    background: #ECF9F0;
                     border-radius: 10px;
                     display: flex;
                     align-items: center;
@@ -418,7 +421,7 @@
                 width: 25px;
                 height: 25px;
                 border-radius: 50%;
-                background-color: $noukha_yellow;
+                background-color: #000;
                 display: flex;
                 align-items: center;
                 justify-content: center;

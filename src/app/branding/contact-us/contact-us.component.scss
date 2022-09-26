@@ -1,8 +1,6 @@
 @import './../../../variables.scss';
 
 .contact-us-con {
-    // height: 100vh;
-    background: linear-gradient(179.68deg, #ECF9F0 0.28%, #FFFFFF 99.77%);
     .contact-us-area {
         padding: 33vh 9.375vw 0 9.375vw;
         .getin-touch-btn-con {
@@ -30,10 +28,15 @@
             justify-content: space-between;
             margin-bottom: 112px;
             .contact-us-tile {
-                background-color: #D3E7D9;
+                background-color: #fff;
+                background: #FFFFFF;
+                border: 1px solid $noukha_green4;
+                border-radius: 26px;
                 padding: 28px 30px;
-                border-radius: 6px;
                 width: 290px;
+                &:hover {
+                    box-shadow: 0px 2px 12px #AFAFAF;
+                }
     
                 .tile-header-box {
                     width: 70px;
@@ -51,10 +54,6 @@
                     color: $noukha_text_dark;
                     font-size: 18px;
                 }
-            }
-            .contact-us-tile.lined-tile {
-                border: 1px solid #13A842;
-                background-color: transparent;
             }
         }
     }
