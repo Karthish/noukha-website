@@ -49,6 +49,19 @@ a {
     outline: none;
 }
 
+.carousel-indicators {
+    bottom: -10vh!important;
+    button {
+        background-color: #297C59!important;
+        width: 8px!important;
+        height: 8px!important;
+        border-radius: 50%!important;
+        &.active {
+            background-color: #87D5A0;
+        }
+    }
+}
+
 .noukha-green-btn {
     background-color: $noukha_green4;
     color: #fff;

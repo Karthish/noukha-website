@@ -247,9 +247,7 @@
 } 
 
 .our-services-area {
-    padding: 90px 0 65px 0;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin: 90px 0 65px 0;
     .our-services-btn-con {
         margin: 0px 0 23px 0;
         text-align: center;
@@ -339,6 +337,51 @@
             border: 1px solid #CFA814;
             border-radius: 8px;
             background-color: $noukha_yellow;
+        }
+    }
+}
+
+.our-tech-area {
+    margin: 90px 0 65px 0;
+    .our-techarea-btn-con {
+        margin: 0px 0 7vh 0;
+        text-align: center;
+        #our-techarea-btn {
+            padding: 6px 23px;
+            background: #ECF9F0;
+            border-radius: 10px;
+            text-align: center;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            font-family: $open_sans_semibold;
+            color: $noukha_green3;
+        }
+    }
+    .our-techarea-content-con {
+        padding: 0 5vw 0 5vw;
+        .our-techarea-content-slide {
+            .carousel-inner-content {
+                flex-direction: column;
+                .our-techarea-content-slide-row {
+                    display: flex;
+                    justify-content: space-between;
+                    .our-techarea-skill {
+                        background: #F9F9F9;
+                        border: 1px solid rgba(175, 175, 175, 0.25);
+                        border-radius: 6px;
+                        width: 15vw;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 1.5vh 1.2vw 1.2vh 1.5vw;
+                        img {
+                            width: 25%;
+                        }
+                    }
+                }
+            }
+            
         }
     }
 }
