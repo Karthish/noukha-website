@@ -1,0 +1,108 @@
+@import './../../../variables.scss';
+
+.home-page-container {
+    // height: 100vh;
+
+    .about-us-header-con {
+        padding: 50px 0;
+        background-color: #EFF8F2;
+        margin: 28vh 0 0 0;
+        .about-us-header-text {
+            padding: 0 9.375vw 0 9.375vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .header-sm {
+            font-size: 22px;
+            font-family: $open_sans_regular;
+            color: $noukha_green3;
+        }
+        .header-lg {
+            font-size: 48px;
+            font-family: $open_sans_bold;
+            color: #2D2D2D;
+        }
+
+    }
+
+    .home-page-content {
+        padding: 70px 9.375vw 70px 9.375vw;
+        .headername-aboutus {
+            .title-line {
+                color: $noukha_green3;
+                font-size: 20px;
+                font-family: $open_sans_semibold;
+            }
+            .lg-title-aboutus {
+                color: $noukha_green3;
+                font-size: 40px;
+                font-family: $open_sans_bold;
+                color: #2D2D2D;
+                line-height: 54px;
+                .green-txt {
+                    color: $noukha_green3;
+                }
+            }
+        }
+
+        .aboutus-content-body {
+            .aboutus-content-body-light {
+                color: #4B4B4B;
+                font-family: $open_sans_regular;
+                font-size: 18px;
+                margin: 20px 0;
+            }
+            .aboutus-content-body-bold {
+                font-size: 24px;
+                font-family: $open_sans_bold;
+                .highlight-txt {
+                    color: $noukha_green4;
+                }
+            }
+        }
+
+        .homepage-image-con {
+            width: 80%;
+            img {
+                width: 100%;
+            }
+        }
+
+        .success-stories-con {
+            position: relative;
+            margin-top: 125px;
+            background-color: #ECF9F0;
+            border: 1px solid rgba(175, 175, 175, 0.25);
+            border-radius: 12px;
+            padding: 25px 0 20px 0;
+            .success-stories-header {
+                color: #4B4B4B;
+                font-size: 42px;
+                font-family: $open_sans_bold;
+            }          
+            .client-stat-con {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 35px;
+                .client-stat-column {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .stat-num {
+                        font-size: 64px;
+                        font-family: $open_sans_bold;
+                        color: $noukha_green4;
+                    }
+                    .stat-name {
+                        font-size: 24px;
+                        font-family: $open_sans_regular;
+                        color: #1E1E1E;
+                    }
+                }
+            }
+        } 
+    }
+
+}

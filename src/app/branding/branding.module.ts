@@ -6,6 +6,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ServicesComponent } from './services/services.component';
 import { HeaderComponent } from './../shared/components/header/header.component';
 import { FooterComponent } from './../shared/components/footer/footer.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 
@@ -15,7 +16,8 @@ import { FooterComponent } from './../shared/components/footer/footer.component'
     ContactUsComponent,
     ServicesComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AboutUsComponent
   ],
   imports: [
     CommonModule,
