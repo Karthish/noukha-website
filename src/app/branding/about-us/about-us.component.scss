@@ -90,6 +90,11 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    width: 33.33%;
+                    &:nth-child(2) {
+                        border-right: 1px solid #000;
+                        border-left: 1px solid #000;
+                    }
                     .stat-num {
                         font-size: 64px;
                         font-family: $open_sans_bold;
@@ -103,6 +108,62 @@
                 }
             }
         } 
+    }
+
+    .services-tiles-con {
+        padding: 70px 7vw 70px 7vw;
+        .carousel-item {
+            & >.row > div {
+                justify-content: center;
+                display: flex;
+            }
+        }
+        .service-tile {
+            background: #fff;
+            border: 1px solid $noukha_green4;
+            border-radius: 26px;
+            padding: 30px 25px 30px 30px;
+            width: 19.3vw;
+            margin-top: 23px;
+            cursor: pointer;
+            &:hover {
+                box-shadow: 0px 0px 15px #8FDA96;
+            }
+            .service-logo-con {
+                margin-bottom: 33px;
+                .service-logo-img-con {
+                    width: 70px;
+                    height: 70px;
+                    background: #ECF9F0;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .service-name {
+                font-size: 24px;
+                font-family: $open_sans_bold;
+                color: $noukha_text_dark;
+                margin-bottom: 55px;
+            }
+            .get-quoate-btn-con {
+                text-align: right;
+                .get-quote-btn {
+                    background-color: transparent;
+                    font-size: 15px;
+                    font-family: $open_sans_semibold;
+                    color: #AFAFAF;
+                    border-radius: 10px;
+                    padding: 10px 30px;
+                    &:hover {
+                        background-color: $noukha_green2;
+                        color: #fff;
+                        font-family: $open_sans_bold;
+                    }
+                }
+            }
+        }
     }
 
 }
