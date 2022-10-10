@@ -20,6 +20,8 @@
     "@angular/router": "~13.0.0",
     "bootstrap": "^5.2.0",
     "jquery": "^3.6.0",
+    "lottie-web": "^5.9.6",
+    "ngx-lottie": "^9.1.0",
     "popper.js": "^1.16.1",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",

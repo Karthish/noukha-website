@@ -1,6 +1,6 @@
 @import './../../../variables.scss';
 
-.home-page-container {
+.aboutus-page-container {
     // height: 100vh;
 
     .about-us-header-con {
@@ -112,11 +112,30 @@
 
     .services-tiles-con {
         padding: 70px 7vw 70px 7vw;
-        .carousel-item {
-            & >.row > div {
-                justify-content: center;
-                display: flex;
+        .our-techarea-btn-con {
+            margin: 0px 0 7vh 0;
+            text-align: center;
+            #our-techarea-btn {
+                padding: 6px 23px;
+                background: #ECF9F0;
+                border-radius: 10px;
+                text-align: center;
+                border: none;
+                outline: none;
+                font-size: 20px;
+                font-family: $open_sans_semibold;
+                color: $noukha_green3;
             }
+        }
+        .carousel-item {
+            & > div {
+                width: 100%;
+               & > div {
+                    justify-content: center;
+                    display: flex;
+                }
+            }
+
         }
         .service-tile {
             background: #fff;
@@ -164,6 +183,196 @@
                 }
             }
         }
+
+        .carousel-item.active {
+            z-index: 10;
+        }
+        .carousel-item {
+            z-index: 5;
+        }
+    }
+
+    .our-team-con {
+        padding: 70px 7vw 70px 7vw;
+        .our-team-btn-con {
+            margin: 7vh 0 7vh 0;
+            text-align: center;
+            #our-team-btn {
+                padding: 6px 23px;
+                background: #ECF9F0;
+                border-radius: 10px;
+                text-align: center;
+                border: none;
+                outline: none;
+                font-size: 20px;
+                font-family: $open_sans_semibold;
+                color: $noukha_green3;
+            }
+        }
+        .team-profiles {
+            .profile-tile {
+                width: 18.6vw;
+                background: #ECF9F0;
+                border: 1px solid $noukha_green1;
+                border-radius: 12px;
+                padding: 10px 10px 15px 10px;
+                height: 46vh;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 5vh;
+                .img-con {
+                    height: 64.6vw;
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .profile-info {
+                    .profile-name {
+                        font-size: 24px;
+                        color: #000000;
+                        font-family: $open_sans_bold;
+                    }
+                    .profile-designation {
+                        font-size: 14px;
+                        color: $noukha_green3;
+                        font-family: $open_sans_semibold;
+                    }
+                }
+            }
+        }
+    }
+
+    .client-feedback-con {
+        margin-top: 12vh;
+        padding: 0 9.375vw 0 9.375vw;
+        .our-testimonals-btn-con {
+            #our_testimonals_btn {
+                padding: 8px 17px;
+                background: #ECF9F0;
+                border-radius: 10px;
+                text-align: center;
+                border: none;
+                outline: none;
+                font-size: 20px;
+                font-family: $open_sans_semibold;
+                color: $noukha_green3;
+            }
+        }
+        .our-testimonals-header-txt {
+            font-family: $open_sans_semibold;
+            font-size: 42px;
+            color: $noukha_text_dark;
+            line-height: 50px;
+            margin-top: 28px;
+        }
+        .carousel-control-con {
+            justify-content: flex-end;
+            .carousel-control {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                background-color: #000;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .control-previous {
+                margin-right: 4vw;
+            }
+        }
+        
+    }
+
+    @media (max-width: 767px) {
+        .carousel-inner .carousel-item>div {
+            display: none
+        }
+    
+        .carousel-inner .carousel-item>div:first-child {
+            display: block
+        }
+    }
+    
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        display: flex
+    }
+    
+    @media (min-width: 768px) {
+    
+        .carousel-inner .carousel-item-end.active,
+        .carousel-inner .carousel-item-next {
+            transform: translateX(33.33%)
+        }
+    
+        .carousel-inner .carousel-item-start.active,
+        .carousel-inner .carousel-item-prev {
+            transform: translateX(-33.33%)
+        }
+    }
+    
+    .carousel-inner .carousel-item-end,
+    .carousel-inner .carousel-item-start {
+        transform: translateX(0)
     }
 
 }
+
+#noukhaCarousel {
+    .carousel-item.active {
+        z-index: 10;
+        display: flex;
+    }
+    .carousel-item {
+        z-index: 5;
+        display: flex;
+    }
+    .card {
+        background-color: #ECF9F0;
+        border-radius: 20px;
+        padding: 1.5vw;
+        margin-right: 2.77vw;
+        &:nth-child(2) {
+            border: 1px solid #297C59;
+        }
+        .card-msg {
+            color: #686868;
+            font-size: 18px;
+            font-family: $open_sans_regular;
+            margin-bottom: 2vh;
+            text-align: left;
+        }
+        .card-client-info-con {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .img-con {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background-color: #fff;
+                margin-right: 15px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .card-client-info {
+                .card-client-name {
+                    color: $noukha_green3;
+                    font-size: 18px;
+                    font-family: $open_sans_bold;
+                    text-align: left;
+                }
+                .card-client-desig {
+                    color: #000;
+                    font-size: 14px;
+                    font-family: $open_sans_regular;
+                }
+            }
+        }
+    }
+}
+

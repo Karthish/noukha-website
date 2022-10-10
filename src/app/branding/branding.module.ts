@@ -7,7 +7,14 @@ import { ServicesComponent } from './services/services.component';
 import { HeaderComponent } from './../shared/components/header/header.component';
 import { FooterComponent } from './../shared/components/footer/footer.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { HomepgAnimationComponent } from './../shared/homepg-animation/homepg-animation.component';
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web';
 
+
+export function playerFactory(): any {  
+  return player;
+}
 
 
 @NgModule({
@@ -17,11 +24,13 @@ import { AboutUsComponent } from './about-us/about-us.component';
     ServicesComponent,
     HeaderComponent,
     FooterComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    HomepgAnimationComponent
   ],
   imports: [
     CommonModule,
-    BrandingRoutingModule
+    BrandingRoutingModule,
+    LottieModule.forRoot({ player: playerFactory })
   ]
 })
 export class BrandingModule { }
