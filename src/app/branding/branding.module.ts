@@ -8,6 +8,7 @@ import { HeaderComponent } from './../shared/components/header/header.component'
 import { FooterComponent } from './../shared/components/footer/footer.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { HomepgAnimationComponent } from './../shared/homepg-animation/homepg-animation.component';
+import { LineAnimationComponent } from './../shared/line-animation/line-animation.component';
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
 
@@ -25,7 +26,8 @@ export function playerFactory(): any {
     HeaderComponent,
     FooterComponent,
     AboutUsComponent,
-    HomepgAnimationComponent
+    HomepgAnimationComponent,
+    LineAnimationComponent
   ],
   imports: [
     CommonModule,

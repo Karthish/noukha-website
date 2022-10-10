@@ -247,7 +247,7 @@
 } 
 
 .our-services-area {
-    margin: 90px 0 65px 0;
+    margin: 45vh 0 65px 0;
     .our-services-btn-con {
         margin: 0px 0 23px 0;
         text-align: center;
@@ -437,7 +437,7 @@
     }
 
     .client-feedback-con {
-        margin-top: 12vh;
+        margin-top: 45vh;
         .our-testimonals-btn-con {
             #our_testimonals_btn {
                 padding: 8px 17px;
@@ -529,6 +529,19 @@
             }
         }
     }
+}
+
+#ourTech_con {
+    position: relative;
+    app-line-animation {
+        position: absolute;
+        bottom: 36vh;
+        left: -1vw;
+    }
+}
+
+.portfolio-content-area {
+    @extend #ourTech_con;
 }
 
 @media (max-width: 767px) {
